@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Michael Hu 的个人主页——数据科学背景，专注 AI 驱动的开发者工具与 Pi 生态。">
+  <meta name="theme-color" content="#f4f1e9">
+  <meta property="og:title" content="Michael Hu — Builder &amp; Explorer">
+  <meta property="og:description" content="Building practical tools and exploring AI-powered developer experiences.">
+  <meta property="og:image" content="assets/avatar.png">
+  <title>Michael Hu — Builder &amp; Explorer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@1,6..72,500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Michael Hu 首页">
+      <span class="wordmark-mark">MH</span>
+      <span>Michael Hu</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#connect">Connect</a>
+    </nav>
+    <a class="header-cta" href="https://github.com/shengxiao20" target="_blank" rel="noreferrer">
+      GitHub <span aria-hidden="true">↗</span>
+    </a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Shanghai · Open to ideas</p>
+        <h1 id="hero-title">Building useful things<br>at the edge of <em>AI.</em></h1>
+        <p class="hero-intro">你好，我是 <strong>Michael Hu</strong>。我关注 AI 驱动的开发者体验，喜欢把复杂的工作流，做成清晰、实用、可分享的工具。</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#work">探索项目 <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="https://www.npmjs.com/~shengxiao04" target="_blank" rel="noreferrer">npm / shengxiao04 <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1">
+        <div class="portrait-wrap">
+          <span class="orbit orbit-one" aria-hidden="true"></span>
+          <span class="orbit orbit-two" aria-hidden="true"></span>
+          <img src="assets/avatar.png" alt="Michael Hu 的 GitHub 头像" width="322" height="322">
+          <div class="status-card">
+            <span class="status-dot"></span>
+            <div><small>Current focus</small><strong>AI × Developer Tools</strong></div>
+          </div>
+        </div>
+        <span class="visual-note note-a">B.S. DATA SCIENCE</span>
+        <span class="visual-note note-b">SISU · 上海</span>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="个人概览">
+      <div><strong>05</strong><span>Public repositories</span></div>
+      <div><strong>03</strong><span>Published Pi packages</span></div>
+      <div><strong>TS</strong><span>Primary language</span></div>
+      <p>Building, learning, and sharing—<em>one project at a time.</em></p>
+    </section>
+
+    <section class="work section" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="kicker">01 / Selected work</p>
+          <h2 id="work-title">Projects with a<br><em>practical pulse.</em></h2>
+        </div>
+        <p>围绕 Pi coding agent 构建的桌面体验、跨会话记忆与终端扩展。以下内容均来自公开 GitHub 仓库。</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project project-featured reveal">
+          <a class="project-link" href="https://github.com/shengxiao20/pi-app" target="_blank" rel="noreferrer" aria-label="查看 Pi Native App 项目"></a>
+          <div class="project-index">01</div>
+          <div class="project-content">
+            <div class="project-meta"><span>Featured build</span><span>TypeScript · Rust</span></div>
+            <h3>Pi Native App</h3>
+            <p>Pi coding-agent harness 的原生桌面客户端。通过 <code>/app</code> 从当前项目启动独立 Pi RPC 会话，将终端工作流带入专注的桌面体验。</p>
+            <ul class="tag-list" aria-label="项目技术标签">
+              <li>Tauri</li><li>SQLite</li><li>Desktop App</li><li>Pi</li>
+            </ul>
+          </div>
+          <div class="project-art app-art" aria-hidden="true">
+            <div class="mini-window">
+              <div class="mini-bar"><i></i><i></i><i></i></div>
+              <div class="mini-body"><span></span><span></span><span></span><b></b></div>
+            </div>
+            <span class="art-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <a class="project-link" href="https://github.com/shengxiao20/pi-session-memory" target="_blank" rel="noreferrer" aria-label="查看 Pi Session Memory 项目"></a>
+          <div class="project-index">02</div>
+          <div class="project-content">
+            <div class="project-meta"><span>Agent memory</span><span>TypeScript</span></div>
+            <h3>Pi Session Memory</h3>
+            <p>本地优先的跨会话、跨 Agent 对话搜索：基于 SQLite，支持可选的本地 Jev 语义相关性过滤、会话迁移与 Obsidian 导出。</p>
+            <ul class="tag-list"><li>Memory</li><li>Search</li><li>Obsidian</li><li>SQLite</li></ul>
+          </div>
+          <div class="project-art memory-art" aria-hidden="true">
+            <div class="memory-nodes"><i></i><i></i><i></i><i></i><span></span><b></b></div>
+            <span class="art-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <a class="project-link" href="https://github.com/shengxiao20/pi-pet" target="_blank" rel="noreferrer" aria-label="查看 Pi Pet 项目"></a>
+          <div class="project-index">03</div>
+          <div class="project-content">
+            <div class="project-meta"><span>TUI extension</span><span>TypeScript</span></div>
+            <h3>Pi Pet</h3>
+            <p>一个会眨眼的 Pi 终端宠物组件。内置角色，也支持用户在不修改 npm 安装内容的前提下加入自己的角色。</p>
+            <ul class="tag-list"><li>TUI</li><li>Extension</li><li>Pet</li><li>Pi</li></ul>
+          </div>
+          <div class="project-art pet-art" aria-hidden="true">
+            <div class="pet-face"><i></i><i></i><span></span></div>
+            <span class="art-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <a class="project-link" href="https://github.com/shengxiao20/publish-your-pi-package" target="_blank" rel="noreferrer" aria-label="查看 Publish Your Pi Package 项目"></a>
+          <div class="project-index">04</div>
+          <div class="project-content">
+            <div class="project-meta"><span>Learning tool</span><span>JavaScript</span></div>
+            <h3>Publish Your Pi Package</h3>
+            <p>从第一个 <code>package.json</code> 到版本管理、npm 浏览器认证发布与发布后检查，逐步引导你发布 Pi package。</p>
+            <ul class="tag-list"><li>Skill</li><li>npm</li><li>Extension</li><li>Guide</li></ul>
+          </div>
+          <div class="project-art package-art" aria-hidden="true">
+            <div class="cube"><span>π</span></div>
+            <span class="art-arrow">↗</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="about-label reveal"><p class="kicker">02 / About</p></div>
+      <div class="about-copy reveal">
+        <h2 id="about-title">Data-informed.<br><em>Curiosity-led.</em></h2>
+        <p class="about-lead">我拥有数据科学学士学位，就读于上海外国语大学经济金融学院。</p>
+        <p>比起只讨论技术，我更享受把想法落成可以安装、可以使用、可以继续生长的产品。最近的探索集中在 Agent 工作流、个人记忆系统，以及更自然的人机交互界面。</p>
+        <div class="principles">
+          <div><span>01</span><strong>Build</strong><p>从真实问题出发</p></div>
+          <div><span>02</span><strong>Learn</strong><p>让好奇心持续驱动</p></div>
+          <div><span>03</span><strong>Share</strong><p>把经验变成公共价值</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages section" aria-labelledby="packages-title">
+      <div class="section-heading compact reveal">
+        <div><p class="kicker">03 / On npm</p><h2 id="packages-title">Tools in the <em>wild.</em></h2></div>
+        <p>公开资料中列出的 npm package 下载数据。</p>
+      </div>
+      <div class="package-table reveal">
+        <a href="https://www.npmjs.com/package/pi-session-memory" target="_blank" rel="noreferrer"><span class="pkg-name">pi-session-memory</span><span>Session memory tooling for Pi</span><strong>3,787 <small>downloads</small></strong><i>↗</i></a>
+        <a href="https://www.npmjs.com/package/pi-native-app" target="_blank" rel="noreferrer"><span class="pkg-name">pi-native-app</span><span>Native app integration for Pi</span><strong>1,056 <small>downloads</small></strong><i>↗</i></a>
+        <a href="https://www.npmjs.com/package/pi-pet-reze" target="_blank" rel="noreferrer"><span class="pkg-name">pi-pet-reze</span><span>A Pi pet extension</span><strong>880 <small>downloads</small></strong><i>↗</i></a>
+      </div>
+    </section>
+
+    <section class="connect section" id="connect" aria-labelledby="connect-title">
+      <p class="kicker reveal">04 / Connect</p>
+      <div class="connect-inner reveal">
+        <h2 id="connect-title">Have an idea worth<br><em>building?</em></h2>
+        <p>欢迎通过这些平台找到我，看看最近在做什么。</p>
+        <div class="social-links">
+          <a href="https://github.com/shengxiao20" target="_blank" rel="noreferrer"><span>GitHub</span><small>@shengxiao20</small><i>↗</i></a>
+          <a href="https://www.npmjs.com/~shengxiao04" target="_blank" rel="noreferrer"><span>npm</span><small>@shengxiao04</small><i>↗</i></a>
+          <a href="https://space.bilibili.com/204451912" target="_blank" rel="noreferrer"><span>Bilibili</span><small>嘉伟今天吃什么</small><i>↗</i></a>
+          <a href="https://www.xiaohongshu.com/user/profile/6267a3e50000000021023f1b" target="_blank" rel="noreferrer"><span>Rednote</span><small>@shengxiao20</small><i>↗</i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="wordmark" href="#top"><span class="wordmark-mark">MH</span><span>Michael Hu</span></a>
+    <p>Built with curiosity in Shanghai.</p>
+    <p>© <span id="year"></span> Michael Hu</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
