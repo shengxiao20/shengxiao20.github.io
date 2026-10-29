@@ -1,0 +1,50 @@
+name: Update npm downloads and publish
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: shengxiao20/shengxiao20/.github/actions/update-npm-downloads@main
+        with:
+          target: website
+      - name: Commit updated statistics
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git commit --allow-empty -m 'docs: refresh npm download totals'
+          git push origin HEAD:main
+      - uses: actions/configure-pages@v5
+      - name: Prepare static site
+        run: |
+          mkdir _site
+          cp index.html styles.css script.js _site/
+          cp -R assets _site/assets
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: update-and-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
